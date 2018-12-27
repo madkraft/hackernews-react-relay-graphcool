@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "get-schema": "get-graphql-schema https://api.graph.cool/relay/v1/cjq6qem5w1y2x0192wwovnv7z > schema.graphql",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js jsx",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -28,7 +30,9 @@
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
+    "@types/react-relay": "^1.3.9",
     "babel-plugin-relay": "^1.7.0",
+    "graphql": "^14.0.2",
     "relay-compiler": "^1.7.0",
     "typescript": "^3.2.2"
   }

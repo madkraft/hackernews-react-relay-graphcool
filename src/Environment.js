@@ -12,7 +12,7 @@ const store = new Store(new RecordSource())
 // 3
 const network = Network.create((operation, variables) => {
   // 4
-  return fetch('__RELAY_API_ENDPOINT__', {
+  return fetch('https://api.graph.cool/relay/v1/cjq6qem5w1y2x0192wwovnv7z', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
