@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "get-schema": "get-graphql-schema https://api.graph.cool/relay/v1/cjq6qem5w1y2x0192wwovnv7z > schema.graphql",
-    "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js jsx",
+    "relay": "relay-compiler --src ./src --schema ./schema.graphql --extensions js tsx",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
